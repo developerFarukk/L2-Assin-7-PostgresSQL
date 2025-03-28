@@ -88,3 +88,18 @@ WHERE published_year < 2000;
 
 -- show update books data
 SELECT * FROM books ORDER BY id;
+
+
+
+
+
+
+--  8)  Delete customers who haven't placed any orders
+
+-- delete not ordered customer
+DELETE FROM customers
+WHERE id NOT IN (SELECT DISTINCT customer_id FROM orders);
+
+
+-- find customer
+SELECT * FROM customers;
