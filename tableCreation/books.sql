@@ -12,6 +12,15 @@ CREATE TABLE books (
 );
 
 
+-- Inpute books data
+INSERT INTO books (title, author, price, stock, published_year) VALUES 
+('The Pragmatic Programmer', 'Andrew Hunt', 40.00, 10, 1999),
+('Clean Code', 'Robert C. Martin', 35.00, 5, 2008),
+('You Don''t Know JS', 'Kyle Simpson', 30.00, 8, 2014),
+('Refactoring', 'Martin Fowler', 50.00, 3, 1999),
+('Database Design Principles', 'Jane Smith', 20.00, 0, 2018);
+
+
 -- find books table data
 SELECT * FROM books;
 
