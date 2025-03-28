@@ -52,3 +52,18 @@ SET price = ROUND(price * 1.10, 2)
 WHERE published_year < 2000;
 ```
 এখানে 2000 সাল পূর্বের সকল data এর price 10% করে বাড়বে। এভাবে আমরা update statement use করতে পারি।
+
+<br />
+
+## 8. What is the significance of the JOIN operation, and how does it work in PostgreSQL?
+JOIN Operation টেবিল থেকে ডাটা কম্বাইন করে। যেমন: 
+```
+SELECT 
+    SUM(b.price * o.quantity) AS total_revenue
+FROM 
+    orders o
+JOIN 
+    books b ON o.book_id = b.id;
+```
+
+
