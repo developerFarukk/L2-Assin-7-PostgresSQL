@@ -27,6 +27,3 @@ SELECT * FROM books;
 -- drop table
 DROP TABLE books;
 
-
--- Delete table
-DELETE TABLE books;
