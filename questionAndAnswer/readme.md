@@ -85,3 +85,18 @@ ORDER BY
 ```
 এখানে total order এর data group করা হয়েছে।
 
+<br />
+
+## 10. How can you calculate aggregate functions like COUNT(), SUM(), and AVG() in PostgreSQL?
+1. **count() :** Row সংখ্যা।
+
+2. **SUM() :** মানের যোগফল।
+
+3. **AVG() :** গড় মান।
+```
+SELECT 
+    COUNT(*) AS total_books,
+    AVG(price) AS avg_price,
+    SUM(stock) AS total_stock
+FROM books;
+```
