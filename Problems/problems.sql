@@ -93,7 +93,6 @@ SELECT * FROM books ORDER BY id;
 
 
 
-
 --  8)  Delete customers who haven't placed any orders
 
 -- delete not ordered customer
