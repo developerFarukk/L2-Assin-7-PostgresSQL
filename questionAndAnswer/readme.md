@@ -41,3 +41,14 @@ SELECT * FROM products WHERE price > 100;
 1. **LIMIT:** Result এর সংখ্যা সীমিত করে।
 
 2. **OFFSET:** নির্দিষ্ট সংখ্যক Row Data স্কিপ করে।
+
+<br />
+
+## 7. How can you modify data using UPDATE statements?
+Data Update করতে:
+```
+UPDATE books
+SET price = ROUND(price * 1.10, 2)
+WHERE published_year < 2000;
+```
+এখানে 2000 সাল পূর্বের সকল data এর price 10% করে বাড়বে। এভাবে আমরা update statement use করতে পারি।
