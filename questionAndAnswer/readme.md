@@ -35,3 +35,9 @@ SELECT * FROM products WHERE price > 100;
 ```
 এখারে Select Statement এ  WHERE Clause দ্বারা Products Cullection থেকে price এর data filter করে আনা হয়েছে।
 
+<br />
+
+## 6. What are the LIMIT and OFFSET clauses used for?
+1. **LIMIT:** Result এর সংখ্যা সীমিত করে।
+
+2. **OFFSET:** নির্দিষ্ট সংখ্যক Row Data স্কিপ করে।
