@@ -22,8 +22,8 @@ Schema হলো Logical Operation যা Database Object (Table, View, Function
 <br />
 
 ## 4. What is the difference between the VARCHAR and CHAR data types?
-1. **VARCHAR:** ফিক্সড লেংথ স্ট্রিং (সবসময় n ক্যারেক্টার নেয়, খালি জায়গা প্যাড করে)
+1. **VARCHAR:** Variable length string যা Maximum  n character হয়।
 
-2. **CHAR:** এক Table এর কলাম অন্য Table এর Primary Key Refer কে বুঝায়। (যেমন: customer_id INT REFERENCES customers(id)).
+2. **CHAR:** Fixed length string বুঝায় যা সবসময় n character নেয়।
 
 
