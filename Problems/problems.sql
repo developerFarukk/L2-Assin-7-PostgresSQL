@@ -21,3 +21,15 @@ GROUP BY
     c.name
 ORDER BY 
     total_orders DESC;
+
+
+
+
+-- 4)   Calculate the total revenue generated from book sales.
+
+SELECT 
+    SUM(b.price * o.quantity) AS total_revenue
+FROM 
+    orders o
+JOIN 
+    books b ON o.book_id = b.id;
