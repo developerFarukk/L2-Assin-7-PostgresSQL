@@ -26,4 +26,12 @@ Schema হলো Logical Operation যা Database Object (Table, View, Function
 
 2. **CHAR:** Fixed length string বুঝায় যা সবসময় n character নেয়।
 
+<br />
+
+## 5. Explain the purpose of the WHERE clause in a SELECT statement.
+WHERE Clause Data Filter করতে ব্যবহৃত হয়। যেমন: 
+```
+SELECT * FROM products WHERE price > 100;
+```
+এখারে Select Statement এ  WHERE Clause দ্বারা Products Cullection থেকে price এর data filter করে আনা হয়েছে।
 
