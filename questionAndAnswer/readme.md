@@ -66,4 +66,22 @@ JOIN
     books b ON o.book_id = b.id;
 ```
 
+<br />
+
+## 9. Explain the GROUP BY clause and its role in aggregation operations.
+Data কে Group করে aggregation function প্রয়োগ করতে পারে। যেমন: 
+```
+SELECT 
+    c.name,
+    COUNT(o.id) AS total_orders
+FROM 
+    customers c
+JOIN 
+    orders o ON c.id = o.customer_id
+GROUP BY 
+    c.name
+ORDER BY 
+    total_orders DESC;
+```
+এখানে total order এর data group করা হয়েছে।
 
